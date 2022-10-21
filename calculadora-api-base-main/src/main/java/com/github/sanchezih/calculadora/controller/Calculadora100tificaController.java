@@ -17,7 +17,7 @@ public class Calculadora100tificaController {
 	}
 	@RequestMapping(value = "/factorial", method = RequestMethod.GET, params = {"num1"})
 	public Integer factorial(@RequestParam("num1") Integer num1) {
-		Integer resultado = 0;
+		Integer resultado = 1;
 		for(int i = 1; i <= num1; i++) {
 	        resultado *= i;	          	       
 	    }
