@@ -19,7 +19,7 @@ public class Calculadora100tificaController {
 	public Integer factorial(@RequestParam("num1") Integer num1) {
 		Integer resultado = 0;
 		for(int i = 1; i <= num1; i++) {
-	        resultado *= i;	          	       
+	        resultado += num1 * i;	          	       
 	    }
 		return resultado;
 	}
