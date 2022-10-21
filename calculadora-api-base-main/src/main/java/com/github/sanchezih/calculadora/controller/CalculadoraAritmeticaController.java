@@ -32,7 +32,7 @@ public class CalculadoraAritmeticaController {
 	public String dividir(@RequestParam("operando1") Integer operando1,
 			@RequestParam("operando2") Integer operando2) {
 		
-		if (operando2 == 0) {
+		if (operando2 != 0) {
 			return String.valueOf(((double)operando1 / operando2));
 		}else {
 			return ("No se puede dividir por 0");
